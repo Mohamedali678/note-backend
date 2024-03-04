@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(cors())
 
 //database connection
-mongoose.connect("mongodb://0.0.0.0:27017/NoteProject2").then(() => console.log("Database has been connected successfully")).catch((error) => {
+mongoose.connect("mongodb+srv://mohayare678:7WRvu8ixdJRkzC2d@cluster0.rrygonl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(() => console.log("Database has been connected successfully")).catch((error) => {
     console.log(error);
 })
 
